@@ -10,5 +10,6 @@ export default {
 export const ButtonStory = (args: ButtonProps) => <Button {...args} />
 ButtonStory.args = {
     content: "Click me!",
+    buttonStyle: "primary",
     onClick: action("Button clicked!"),
 }
