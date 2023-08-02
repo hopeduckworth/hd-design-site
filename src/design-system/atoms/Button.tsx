@@ -2,17 +2,19 @@ import { ButtonHTMLAttributes } from "react"
 import { styled } from "styled-components";
 
 const StyledButton = styled.button<{ buttonStyle: ButtonStyle }>`
-    background-color: #ffffff;
-    color: ${props => props.buttonStyle === 'primary' ? "#b162b1" : props.buttonStyle === 'secondary' ? '#ad2142' : 'black'};
+    background-color: ${props => props.buttonStyle === 'primary' ? "#ffffff" : props.buttonStyle === 'secondary' ? '#b162b1' : 'white'};
+    color: ${props => props.buttonStyle === 'primary' ? "#b162b1" : props.buttonStyle === 'secondary' ? '#ffffff' : 'black'};
     font-size: 0.875rem; 
     padding: 0.625rem 3.75rem; 
     margin-top: 1rem;
     cursor: pointer; 
     font-family: 'Roboto', sans-serif; 
-    border: ${props => props.buttonStyle === 'primary' ? "2px solid #b162b1" : props.buttonStyle === 'secondary' ? '2px solid #ad2142' : '2px solid #b162b1'};
+    border: ${props => props.buttonStyle === 'primary' ? "2px solid #b162b1" : props.buttonStyle === 'secondary' ? '2px solid #b162b1' : '2px solid #b162b1'};
     
     &:hover{
         background-color: #d7b6d7;
+        color: #ffffff;
+        font-weight: bold;
     }
 
     transition: .2s background-color ease-in-out;
