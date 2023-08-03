@@ -2,9 +2,9 @@ import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 
 const StyledInput = styled.input`
-  color: white;
+  color: black;
   border: 2px solid gray;
-  background-color: #d7b6d7;
+  background-color: white;
   padding: 0.25rem 0.5rem;
   outline: none;
 
