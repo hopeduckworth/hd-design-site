@@ -5,5 +5,9 @@
  */
 export const routes = {
     root: "/",
+    home: "/home",
     about: "/about",
+    info: "/info",
+    projects: "/projects",
+    pricing: "/pricing",
 }

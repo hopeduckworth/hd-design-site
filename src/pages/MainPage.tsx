@@ -1,14 +1,40 @@
-import { Link } from "react-router-dom"
-import { routes } from "../routes"
+import { Link, Outlet, useNavigate } from "react-router-dom"
 import { styled } from "styled-components"
+import { TopNavBar } from "../design-system/molecules/TopNavBar"
+import { useEffect } from "react"
+import { routes } from "../routes"
+import backgroundImage from "../assets/dummyimg.jpg"
 
-const StyledLink = styled(Link)``
+
+const PageWrapper = styled.div`
+    padding: 1rem;
+`
+
+const Background = styled.img`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:  100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 70%;
+`
 
 export const MainPage = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        navigate(routes.home);
+    }, []);
+
     return (
         <>
-            <h1>This is the Main Page</h1>
-            <StyledLink to={routes.about}>About Page</StyledLink>
+            <Background src={backgroundImage} />
+            <TopNavBar />
+            <PageWrapper>
+                <Outlet />
+            </PageWrapper>
         </>
     )
 }
