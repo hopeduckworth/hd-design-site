@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { routes } from "../../routes";
-import { link } from "fs";
+import { colors } from "../../colors";
+import { CircleLogo } from "../atoms/CircleLogo";
 
 const OuterContainer = styled.div`
     display: flex;
@@ -10,7 +11,7 @@ const OuterContainer = styled.div`
     width: 100vw;
     padding: 4rem;
     box-sizing: border-box;
-    background-color: #D1AAD2;
+    background-color: ${colors.darkViolet}CC; // 80% opacity
 `;
 
 const InnerContainer = styled.div`
@@ -20,12 +21,13 @@ const InnerContainer = styled.div`
     width: 100%;
 `;
 
-const Logo = styled.div`
-    width: 92px;
-    height: 92px;
-    background-color: white;
-    border-radius: 1000px;    
-`;
+// const Logo = styled.div`
+//     width: 92px;
+//     height: 92px;
+//     background-color: white;
+//     border-radius: 1000px;
+//     opacity: 100%;    
+// `;
 
 const NavItems = styled.ul`
     display: flex;
@@ -37,6 +39,7 @@ const NavItem = styled.li`
    
 `
 const StyledLink = styled(Link)`
+    font-family: 'Roboto', sans-serif;
     color: white;
     &:visited{
         color: white;
@@ -53,7 +56,7 @@ export const TopNavBar = () => {
     return (
         <OuterContainer>
             <InnerContainer>
-                <Logo />
+                <CircleLogo size='140px' />
                 <NavItems>
                     <NavItem><StyledLink to={routes.home}>Home</StyledLink></NavItem>
                     <NavItem><StyledLink to={routes.about}>About</StyledLink></NavItem>

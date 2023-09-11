@@ -3,7 +3,7 @@ import { styled } from "styled-components"
 import { TopNavBar } from "../design-system/molecules/TopNavBar"
 import { useEffect } from "react"
 import { routes } from "../routes"
-import backgroundImage from "../assets/dummyimg.jpg"
+import backgroundImage from "../assets/main_background.jpg"
 
 
 const PageWrapper = styled.div`
