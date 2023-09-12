@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { routes } from "../../routes";
 import { colors } from "../../colors";
 import { CircleLogo } from "../atoms/CircleLogo";
+import { mediaQuery } from "../layout/mediaQueries";
 
 const OuterContainer = styled.div`
     display: flex;
@@ -16,18 +17,15 @@ const OuterContainer = styled.div`
 
 const InnerContainer = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-`;
 
-// const Logo = styled.div`
-//     width: 92px;
-//     height: 92px;
-//     background-color: white;
-//     border-radius: 1000px;
-//     opacity: 100%;    
-// `;
+    ${mediaQuery.medium} {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+`;
 
 const NavItems = styled.ul`
     display: flex;
