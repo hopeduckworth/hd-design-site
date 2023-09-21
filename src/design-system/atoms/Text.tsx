@@ -30,11 +30,11 @@ export const H5 = styled.h5`
 export const H6 = styled.h6`
     
 `;
-/** A styled body component */
+/** A styled body component. Is a p tag under the hood. */
 export const Body = styled.p`
     
 `;
-/** A styled body component for smaller than normal text */
+/** A styled body component for smaller than normal text. Is a p tag under the hood */
 export const SmallBody = styled.p`
     
 `;
