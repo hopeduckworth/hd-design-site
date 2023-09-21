@@ -9,6 +9,7 @@ import { AboutPage } from './pages/AboutPage';
 import { InfoPage } from './pages/InfoPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { PricingPage } from './pages/PricingPage';
+import { HomePage } from './pages/HomePage';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: routes.home,
-        element: <h1>Home page</h1>
+        element: <HomePage />
       }, {
         path: routes.about,
         element: <AboutPage />,

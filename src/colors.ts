@@ -9,4 +9,8 @@ export const colors = {
   lakeBlue: "#5271FF",
   cloudGray: "#D9D9D9",
   white: "#ffffff",
+  text: {
+    darkgray: "#111111",
+    midgray: "#333333",
+  },
 };
