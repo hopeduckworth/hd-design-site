@@ -11,6 +11,7 @@ export const colors = {
   white: "#ffffff",
   text: {
     darkgray: "#111111",
+    charcoalgray: "#36454F",
     midgray: "#333333",
   },
 };

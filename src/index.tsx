@@ -10,6 +10,7 @@ import { InfoPage } from './pages/InfoPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { PricingPage } from './pages/PricingPage';
 import { HomePage } from './pages/HomePage';
+import './index.css';
 
 const router = createBrowserRouter([
   {
