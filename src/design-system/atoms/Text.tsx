@@ -3,7 +3,7 @@ import { colors } from "../../colors";
 
 const headerProps = css`
     margin: 0;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;;
 `
 
 
@@ -11,8 +11,8 @@ const headerProps = css`
 export const H1 = styled.h1`
     ${headerProps}
     font-style: normal;
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: 300;
+    font-size: 5rem;
     line-height: 120%;
     color: ${colors.text.charcoalgray};
 `;
