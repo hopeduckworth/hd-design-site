@@ -30,7 +30,7 @@ export const H2 = styled.h2`
 /** A styled h3 component */
 export const H3 = styled.h3`
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 3rem;
     line-height: 100%;
     color: ${colors.text.charcoalgray};
