@@ -10,7 +10,7 @@ const OuterContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100vw;
-    padding: 4rem;
+    padding: 2.5rem;
     box-sizing: border-box;
     background-color: ${colors.darkViolet}CC; // 80% opacity
 `;
